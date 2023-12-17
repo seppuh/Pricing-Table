@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.container__one {
+    background: #004777;
+    border:#004777;
+    border-radius: 2rem;
+}
+
+.container__two {
+    background: #A30000;
+    border: #A30000;
+    border-radius: 2rem;
+}
+
+.container__three {
+    background: #FF7700;
+    border: #FF7700;
+    border-radius: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    border: 1px transparent;
+
+}
+
+p,
+ul {
+    font-size: 0.75em;
+}
+
+/* li::before {
+  padding-left:0;
+} */
+
+hr {
+    width: 6rem;
+    align-self: center;
+}
+
+@media (min-width: 680px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container__one,
+    .container__two,
+    .container__three {
+        min-width: 200px;
+        margin-right: 2rem;
+        padding: 3rem;
+    }
+    
+}
