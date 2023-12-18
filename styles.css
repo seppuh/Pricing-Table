@@ -6,6 +6,18 @@
     padding: 0;
 }
 
+.container__one,
+.container__two,
+.container__three {
+
+    padding: 3rem;
+}
+
+h2 {
+    padding-bottom: 2rem;
+    font-size: 3rem;
+}
+
 body {
     padding: 2rem;
     font-size: 1.5rem;
@@ -13,7 +25,7 @@ body {
 
 .container__one {
     background: #004777;
-    border:#004777;
+    border: #004777;
     border-radius: 2rem;
 }
 
@@ -29,6 +41,11 @@ body {
     border-radius: 2rem;
 }
 
+.container__package__three {
+    background: white;
+    border: 2px solid black;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -41,15 +58,43 @@ body {
 p,
 ul {
     font-size: 0.75em;
+    padding-bottom: 2rem;
+}
+
+li {
+    padding-bottom: 1.75rem;
 }
 
 /* li::before {
   padding-left:0;
-} */
+}  FIXING LIST-STYLE TO FIT IN CONTAINER 
+   680PX*/
 
 hr {
     width: 6rem;
     align-self: center;
+}
+
+.button__container {
+    background-color: white;
+    width: 20rem;
+}
+
+h1 {}
+
+button {
+    border-radius: 5px;
+    font-size: 2rem;
+    color: orange;
+    background: transparent;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border: 2px solid orange;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 680px) {
@@ -66,5 +111,5 @@ hr {
         margin-right: 2rem;
         padding: 3rem;
     }
-    
+
 }
