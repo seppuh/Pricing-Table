@@ -70,7 +70,7 @@ li {
 }  FIXING LIST-STYLE TO FIT IN CONTAINER 
    680PX*/
 
-hr {
+.hr {
     width: 6rem;
     align-self: center;
 }
